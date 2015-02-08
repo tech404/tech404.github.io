@@ -1,6 +1,9 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+@import "mixins";
+
+
 $background-color: #F8A434;
 $highlight-color: #E86C8D;
 $body-text-color: #FDFCFB;
@@ -122,6 +125,12 @@ form, footer {
 }
 
 /* Utility */
-.flash-message { display: none; }
+.flash-message {
+  @include border-radius(5px);
+  background-color:$highlight-color;
+  display: none;
+  margin:2em 0;
+  padding:1em;
+}
 
 /** that's all, folks **/
