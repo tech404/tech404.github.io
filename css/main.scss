@@ -1,52 +1,136 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+@import "mixins";
+
+
+$background-color: #F8A434;
+$highlight-color: #E86C8D;
+$body-text-color: #FDFCFB;
+$body-text-size: 20px;
+$link-color: darken($highlight-color,40%);
+$link-hover-color: lighten($link-color,10%);
+$border-color: darken($background-color,30%);
+$footer-text-size: .9em;
+
 @charset "utf-8";
 
+body {
+  background: $background-color;
+  color: $body-text-color;
+  font-family: 'Lato', sans-serif;
+  font-size: $body-text-size;
+  line-height: 1.35em;
+  text-align: center;
+}
 
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
+}
 
-// Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
-$small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+header .site-title {
+  color: $body-text-color;
+  font-size: 5em;
+  font-weight: bold;
+  line-height: 1em;
+  text-decoration: none;
+}
 
-$spacing-unit:     30px;
-
-$text-color:       #111;
-$background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
-
-$grey-color:       #828282;
-$grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-
-// Width of the content area
-$content-width:    800px;
-
-$on-palm:          600px;
-$on-laptop:        800px;
-
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
-@mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+form, footer {
+  width: 600px;
+  margin: auto;
+  text-align: left;
 }
 
 
+/**
+ * The main form and info
+ */
+ form {
+  .description {
+    letter-spacing: 1px;
+    line-height: 1.3em;
+  }
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "layout",
-        "syntax-highlighting"
-;
+  .input {
+    display: flex;
+    align-items: center;
+  }
+
+  .button {
+    height: 44px;
+    border: none;
+  }
+
+  #email {
+    width: 75%;
+    background: #FDFCFB;
+    font-family: inherit;
+    font-size: 18px;
+    color: #737373;
+    letter-spacing: 1px;
+    text-indent: 5%;
+    border-radius: 5px 0 0 5px;
+  }
+
+  #submit {
+    width: 25%;
+    height: 46px;
+    background: $highlight-color;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: bold;
+    color: inherit;
+    letter-spacing: 1px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+  }
+
+  #submit:hover {
+    background: #d45d7d;
+  }
+
+  input:focus {
+    outline: none;
+    outline: 2px solid #E86C8D;
+    box-shadow: 0 0 2px #E86C8D;
+  }
+}
+
+/**
+ * Footer Section
+ */
+ footer {
+  border-top:1px solid $border-color;
+  margin:2em auto;
+  p {
+    font-size: .9em;
+    line-height: 1.35em;
+  }
+  li {
+    font-size: .85em;
+  }
+  .footer-nav {
+    border-top:1px solid $border-color;
+    margin-top:1em;
+    padding:1em 0;
+    a {
+      font-size: .7em;
+    }
+  }
+}
+
+/* Utility */
+.flash-message {
+  @include border-radius(5px);
+  background-color:$highlight-color;
+  display: none;
+  margin:2em 0;
+  padding:1em;
+}
+
+/** that's all, folks **/

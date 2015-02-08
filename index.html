@@ -1,32 +1,26 @@
 ---
 layout: default
 ---
+<form action="#" method="post" id="invitationForm">
+  <div class="description">
+    <p>TECH404 is a group of chat channels for Atlanta area developers, designers, marketers, business people, hobbyists, students, and other professionals involved in technology.</p>
 
-<h1>tech404</h1>
+    <p>It&rsquo;s a common space for all to use and enjoy. We talk about the technologies we use, our successes and failures, job opportunities, and the latest cute animal GIFs.</p>
 
-<p>
-  tech404 is a group of chat channels for Atlantians involved in technology: developers, designers, hobbyists, students, and other professionals. it's a common space for all to use and enjoy.
-</p>
+    <h2>Join Us!</h2>
+    <p>Put your best email address in the box below and our robots will send you an invitation.</p>
+    <div class="flash-message success" id="invitationFormSuccess">
+      <!-- TODO: This is meant to be a stylized "flash" notification that's hidden by default -->
+      Great! An invitation should arrive within a few minutes.
+    </div>
 
-<p>
-  we talk about the technologies we use, our successes and failures, job opportunities, and the latest cute animal gifs.
-</p>
-
-<p>
-  join us! by giving us your email address, our robots will automatically send you an invitation to join the chat room.
-</p>
-
-<div id="invitationFormSuccess">
-  <!-- TODO: This is meant to be a stylized "flash" notification that's hidden by default -->
-  great! our robots will send you an invitation within a few minutes
-</div>
-
-<div id="invitationFormFail">
-  <!-- TODO: This is meant to be a stylized "flash" notification that's hidden by default -->
-  our robots are malfunctioning and cannot send invitations at this time. please try again later
-</div>
-
-<form id="invitationForm">
-  <input type="email" name="invitation[email]" size="30" placeholder="you@example.com">
-  <input type="submit" value="Go!">
+    <div class="flash-message error" id="invitationFormFail">
+      <!-- TODO: This is meant to be a stylized "flash" notification that's hidden by default -->
+      Oh No! Our robots are malfunctioning and cannot send invitations at this time. Please try again later.
+    </div>
+  </div>
+  <div class="input" id="inputFields">
+    <input type="email" class="button" id="email" name="invitation[email]" size="30" placeholder="you@example.com">
+    <input type="submit" class="button" id="submit" value="Invite Me!">
+  </div>
 </form>
