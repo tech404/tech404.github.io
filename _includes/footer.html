@@ -1,19 +1,11 @@
 <footer>
   <p>TECH404 runs on <a href="http://www.slack.com">Slack</a>, a simple and easy way for people to stay connected.</p>
-  <p>The current moderators are:</p>
-  <ul>
-    {% for admin in site.data.admins %}
-    {% if admin.twitter %}
-    <li><a href="https://twitter.com/{{ admin.twitter }}">{{ admin.name }}</a></li>
-    {% else %}
-    <li>{{ admin.name }}</li>
-    {% endif %}
-    {% endfor %}
-  </ul>
   <p>If you&rsquo;d like to participate as an admin or to invite your group to the discussion, just ask one of them how to get involved.</p>
   <div class="footer-nav">
-    <a href="https://github.com/tech404">The Github Project</a>
+    <a href="/moderators/">The Moderators</a>
     &middot;
     <a href="https://github.com/tech404/CoC">Code of Conduct</a>
+    &middot;
+    <a href="https://github.com/tech404">The Github Project</a>
   </div>
 </footer>
