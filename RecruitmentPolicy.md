@@ -15,7 +15,7 @@
 
 ###All Jobs/Gigs Postings:
 
-Do not post them if they cannot be done from a chair in Atlanta. Remote is fine as long as the person is in Atlanta while doing it.
+Do not post them if they cannot be done from a chair in Atlanta. Remote is fine as long as the person can be in Atlanta while doing it.
 
 Do not post generic referral links. 
 
