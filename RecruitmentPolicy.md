@@ -11,6 +11,14 @@
 
 * Leave people alone, in peace, if they want neither of these things: Feeling pursued when you don’t want to be is both uncomfortable and unwelcoming
 
+##Jobs vs. Gigs
+
+* A **job** is W-2 employment. Jobs should only be posted in the `#jobs` room, not the `#gigs` room.
+
+* A **gig** is part-time or contract work. Gigs should only be posted in the `#gigs` room, not the `#jobs` room.
+
+* An opening which could be either W-2 or contract may be posted to either room (or both).
+
 ##Specific Policies 
 
 ###All Jobs/Gigs Postings:
