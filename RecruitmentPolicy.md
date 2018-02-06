@@ -1,5 +1,4 @@
-
-# tech404.io Recruitment Policy
+# tech404 Recruitment Policy
 
 ####Last updated: October 19th, 2016
 

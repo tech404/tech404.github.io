@@ -1,4 +1,4 @@
-# tech404.io
+# tech404.github.io
 
 ## Development
 
