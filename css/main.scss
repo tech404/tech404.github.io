@@ -1,24 +1,24 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+
 @import "mixins";
 
-
-$background-color: #F8A434;
-$highlight-color: #E86C8D;
-$body-text-color: #FDFCFB;
+$background-color: #f8a434;
+$highlight-color: #e86c8d;
+$body-text-color: #fdfcfb;
 $body-text-size: 20px;
-$link-color: darken($highlight-color,40%);
-$link-hover-color: lighten($link-color,10%);
-$border-color: darken($background-color,30%);
-$footer-text-size: .9em;
+$link-color: darken($highlight-color, 40%);
+$link-hover-color: lighten($link-color, 10%);
+$border-color: darken($background-color, 30%);
+$footer-text-size: 0.9em;
 
 @charset "utf-8";
 
 body {
   background: $background-color;
   color: $body-text-color;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: $body-text-size;
   line-height: 1.35em;
   text-align: center;
@@ -39,19 +39,18 @@ header .site-title {
   text-decoration: none;
 }
 
-
-
-section, form, footer {
-  width: 600px;
+section,
+form,
+footer {
+  width: 360px;
   margin: auto;
   text-align: left;
 }
 
-
 /**
  * The main form and info
  */
- form {
+form {
   .description {
     letter-spacing: 1px;
     line-height: 1.3em;
@@ -69,7 +68,7 @@ section, form, footer {
 
   #email {
     width: 75%;
-    background: #FDFCFB;
+    background: #fdfcfb;
     font-family: inherit;
     font-size: 18px;
     color: #737373;
@@ -89,7 +88,7 @@ section, form, footer {
     letter-spacing: 1px;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
-    transition: background .3s ease-in-out;
+    transition: background 0.3s ease-in-out;
   }
 
   #submit:hover {
@@ -98,30 +97,30 @@ section, form, footer {
 
   input:focus {
     outline: none;
-    outline: 2px solid #E86C8D;
-    box-shadow: 0 0 2px #E86C8D;
+    outline: 2px solid #e86c8d;
+    box-shadow: 0 0 2px #e86c8d;
   }
 }
 
 /**
  * Footer Section
  */
- footer {
-  border-top:1px solid $border-color;
-  margin:2em auto;
+footer {
+  border-top: 1px solid $border-color;
+  margin: 2em auto;
   p {
-    font-size: .9em;
+    font-size: 0.9em;
     line-height: 1.35em;
   }
   li {
-    font-size: .85em;
+    font-size: 0.85em;
   }
   .footer-nav {
-    border-top:1px solid $border-color;
-    margin-top:1em;
-    padding:1em 0;
+    border-top: 1px solid $border-color;
+    margin-top: 1em;
+    padding: 1em 0;
     a {
-      font-size: .7em;
+      font-size: 0.7em;
     }
   }
 }
@@ -129,10 +128,19 @@ section, form, footer {
 /* Utility */
 .flash-message {
   @include border-radius(5px);
-  background-color:$highlight-color;
+  background-color: $highlight-color;
   display: none;
-  margin:2em 0;
-  padding:1em;
+  margin: 2em 0;
+  padding: 1em;
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+  section,
+  form,
+  footer {
+    width: 600px;
+  }
 }
 
 /** that's all, folks **/
