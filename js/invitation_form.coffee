@@ -11,7 +11,7 @@ $ ->
     serialized = $("#invitationForm").serialize()
     $("#invitationForm").find("input").prop("disabled", "disabled")
 
-    xhr = $.post("https://tech404-inviter.herokuapp.com/invitations", serialized)
+    xhr = $.post("https://tech404-inviter.fly.dev/invitations", serialized)
     xhr.done ->
       $("#invitationFormSuccess").show()
     xhr.fail ->
