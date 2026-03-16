@@ -22,6 +22,8 @@ Specific referral links to specific jobs/gigs are fine.
 
 Do not recruit people in unsolicited DMs. Post publicly and let them come to you. Ask them to DM you in your posting. Talking in channel with them is fine.
 
+All job posts must include an offer for $200 (can go up to $250)
+
 ### Non-recruiting topic channels (E.g. Docker, Ruby, etc):
 
 Don't recruit there. If you're in the market for jobs or gigs, go to #jobs or #gigs, and set slack keywords if you want it to notify you.
